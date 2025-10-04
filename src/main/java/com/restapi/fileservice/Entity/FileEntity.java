@@ -1,19 +1,14 @@
 package com.restapi.fileservice.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
+@Table(name = "file")
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class FileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
