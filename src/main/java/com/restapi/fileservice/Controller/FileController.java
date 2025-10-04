@@ -1,5 +1,6 @@
 package com.restapi.fileservice.Controller;
 
+import com.restapi.fileservice.DTO.FileReponseDTO;
 import com.restapi.fileservice.Entity.FileEntity;
 import com.restapi.fileservice.Service.FileService;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +29,7 @@ public class FileController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<FileEntity>> listFile(){
+    public ResponseEntity<List<FileReponseDTO>> listFile(){
         return ResponseEntity.ok().body(fileService.getAllFile());
     }
 

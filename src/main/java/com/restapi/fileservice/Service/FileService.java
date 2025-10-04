@@ -1,5 +1,6 @@
 package com.restapi.fileservice.Service;
 
+import com.restapi.fileservice.DTO.FileReponseDTO;
 import com.restapi.fileservice.Entity.FileEntity;
 import com.restapi.fileservice.Repository.FileRepository;
 import com.restapi.fileservice.exception.FileStorageException;
@@ -52,8 +53,9 @@ public class FileService {
         }
     }
 
-    public List<FileEntity> getAllFile(){
-        return fileRepository.findAll();
+    public List<FileReponseDTO> getAllFile(){
+        List<FileReponseDTO> reponse = fileRepository.findAll().stream().map(FileReponseDTO::toDTO).toList();
+        return reponse;
     }
 
     public FileEntity getFileByid(long id) throws  IOException{
