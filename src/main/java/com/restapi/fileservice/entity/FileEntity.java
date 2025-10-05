@@ -1,4 +1,4 @@
-package com.restapi.fileservice.Entity;
+package com.restapi.fileservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

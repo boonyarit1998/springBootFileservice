@@ -1,6 +1,6 @@
-package com.restapi.fileservice.DTO;
+package com.restapi.fileservice.dto;
 
-import com.restapi.fileservice.Entity.FileEntity;
+import com.restapi.fileservice.entity.FileEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

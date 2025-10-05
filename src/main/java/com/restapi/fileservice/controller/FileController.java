@@ -1,8 +1,8 @@
-package com.restapi.fileservice.Controller;
+package com.restapi.fileservice.controller;
 
-import com.restapi.fileservice.DTO.FileReponseDTO;
-import com.restapi.fileservice.Entity.FileEntity;
-import com.restapi.fileservice.Service.FileService;
+import com.restapi.fileservice.dto.FileReponseDTO;
+import com.restapi.fileservice.entity.FileEntity;
+import com.restapi.fileservice.service.FileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;

@@ -1,6 +1,6 @@
-package com.restapi.fileservice.Repository;
+package com.restapi.fileservice.repository;
 
-import com.restapi.fileservice.Entity.FileEntity;
+import com.restapi.fileservice.entity.FileEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

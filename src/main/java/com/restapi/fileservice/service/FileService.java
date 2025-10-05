@@ -1,8 +1,8 @@
-package com.restapi.fileservice.Service;
+package com.restapi.fileservice.service;
 
-import com.restapi.fileservice.DTO.FileReponseDTO;
-import com.restapi.fileservice.Entity.FileEntity;
-import com.restapi.fileservice.Repository.FileRepository;
+import com.restapi.fileservice.dto.FileReponseDTO;
+import com.restapi.fileservice.entity.FileEntity;
+import com.restapi.fileservice.repository.FileRepository;
 import com.restapi.fileservice.exception.FileStorageException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
